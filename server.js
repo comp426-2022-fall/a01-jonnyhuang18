@@ -1,5 +1,5 @@
 // Require http module
-const http = require('https');
+const http = require('http');
 
 // Require fs module
 const fs = require('fs');
@@ -45,7 +45,7 @@ fs.readFile('./public/index.html', 'utf8', (err, data) => {
 
 	server.listen(port, () => {
           console.log(`Server listening on port ${port}`)
-      })
+      });
 });
 
 // That's it! You're all done!
